@@ -33,7 +33,7 @@ h2 + p {
 a {
   text-decoration: none;
   color: #007fff;
-  padding: 0 0 0.2rem 0;
+  padding: 0 0 .2rem 0;
   font-weight: bold;
 }
 a:hover {
@@ -43,7 +43,7 @@ pre {
   overflow-x: auto;
   padding: 1.25em;
   margin: 1.6em 0;
-  font-size: 0.875em;
+  font-size: .875em;
   background: #fcfcfc;
   white-space: pre;
   word-wrap: normal;
@@ -101,7 +101,7 @@ code {
 .button {
   display: inline-block;
   min-width: 9rem;
-  padding: 0.5rem 0;
+  padding: .5rem 0;
   margin: 0;
   border: 2px solid #007fff;
   border-radius: 3px;
@@ -155,7 +155,7 @@ code {
 }
 .box-container {
   box-sizing: border-box;
-  padding: 0.5rem;
+  padding: .5rem;
 }
 .page-footer {
   box-sizing: border-box;
@@ -180,7 +180,7 @@ code {
   }
   .button {
     min-width: 11rem;
-    margin: 0.5rem 1rem;
+    margin: .5rem 1rem;
     font-size: 1.25rem;
   }
   .box-row,
