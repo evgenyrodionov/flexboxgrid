@@ -288,6 +288,10 @@
   order: 1;
 }
 
+.initial-order-xs {
+  order: initial;
+}
+
 @media (--sm-viewport) {
   .col-sm,
   .col-sm-1,
@@ -476,6 +480,10 @@
 
   .last-sm {
     order: 1;
+  }
+  
+  .initial-order-sm {
+    order: initial;
   }
 }
 
@@ -668,6 +676,10 @@
   .last-md {
     order: 1;
   }
+  
+  .initial-order-md {
+    order: initial;
+  }
 }
 
 @media (--lg-viewport) {
@@ -859,6 +871,10 @@
   .last-lg {
     order: 1;
   }
+  
+  .initial-order-lg {
+    order: initial;
+  }
 }
 
 @media (--xl-viewport) {
@@ -1049,6 +1065,10 @@
 
   .last-xl {
     order: 1;
+  }
+  
+  .initial-order-xl {
+    order: initial;
   }
 }
 

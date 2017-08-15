@@ -557,6 +557,7 @@
         <p>Add classes to reorder columns.</p>
 
         <h3><code>.first-</code></h3>
+        <p>Forces a column to appear first.</p>
 
         <div class="row">
           <div class="col-xs-12">
@@ -604,6 +605,7 @@
 </code></pre>
 
         <h3><code>.last-</code></h3>
+        <p>Forces a column to appear last.</p>
 
         <div class="row">
           <div class="col-xs-12">
@@ -649,6 +651,53 @@
     &lt;/div>
 &lt;/div>
 </code></pre>
+
+        <h3><code>.initial-order-</code></h3>
+        <p>Resets a column to its initial order.</p>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="box box-container">
+              <div class="row">
+                <div class="col-xs-2">
+                  <div class="box-first">1</div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="box-first">2</div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="box-first">3</div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="box-first">4</div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="box-first">5</div>
+                </div>
+                <div class="col-xs-2 first-xs initial-order-sm">
+                  <div class="box-nested">6</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <pre><code>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-2&quot;&gt;
+        &lt;div class=&quot;box&quot;&gt;
+            1
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-2&quot;&gt;
+        &lt;div class=&quot;box&quot;&gt;
+            2
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs-2 first-xs initial-order-sm&quot;&gt;
+        &lt;div class=&quot;box&quot;&gt;
+            3
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
       </section>
 
