@@ -26,7 +26,7 @@
 @custom-media --xs-only only screen and (max-width: 575px);
 @custom-media --sm-only only screen and (min-width: 576px) and (max-width: 767px);
 @custom-media --md-only only screen and (min-width: 768px) and (max-width: 991px);
-@custom-media --lg-only only screen and (min-width: 992px) and (max-width: 1200px);
+@custom-media --lg-only only screen and (min-width: 992px) and (max-width: 1199px);
 @custom-media --xl-only only screen and (min-width: 1200px);
 
 .container {
