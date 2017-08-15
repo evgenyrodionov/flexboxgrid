@@ -1054,30 +1054,30 @@
 
 @media (--xs-only) {
   .hidden-xs {
-    display: none;  
-  }  
+    display: none;
+  }
 }
 
 @media (--sm-only) {
   .hidden-sm {
-    display: none;  
-  }  
+    display: none;
+  }
 }
 
 @media (--md-only) {
   .hidden-md {
-    display: none;  
-  }  
+    display: none;
+  }
 }
 
 @media (--lg-only) {
   .hidden-lg {
-    display: none;  
-  }  
+    display: none;
+  }
 }
 
 @media (--xl-only) {
   .hidden-xl {
-    display: none;  
-  }  
+    display: none;
+  }
 }
