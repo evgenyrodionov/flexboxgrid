@@ -23,11 +23,11 @@
 @custom-media --lg-viewport only screen and (min-width: 992px);
 @custom-media --xl-viewport only screen and (min-width: 1200px);
 
-@custom-media --xs-hidden only screen and (max-width: 575px);
-@custom-media --sm-hidden only screen and (min-width: 576px) and (max-width: 767px);
-@custom-media --md-hidden only screen and (min-width: 768px) and (max-width: 991px);
-@custom-media --lg-hidden only screen and (min-width: 992px) and (max-width: 1200px);
-@custom-media --xl-hidden only screen and (min-width: 1200px);
+@custom-media --xs-only only screen and (max-width: 575px);
+@custom-media --sm-only only screen and (min-width: 576px) and (max-width: 767px);
+@custom-media --md-only only screen and (min-width: 768px) and (max-width: 991px);
+@custom-media --lg-only only screen and (min-width: 992px) and (max-width: 1200px);
+@custom-media --xl-only only screen and (min-width: 1200px);
 
 .container {
   margin-left: auto;
@@ -1052,31 +1052,31 @@
   }
 }
 
-@media (--xs-hidden) {
+@media (--xs-only) {
   .hidden-xs {
     display: none;  
   }  
 }
 
-@media (--sm-hidden) {
+@media (--sm-only) {
   .hidden-sm {
     display: none;  
   }  
 }
 
-@media (--md-hidden) {
+@media (--md-only) {
   .hidden-md {
     display: none;  
   }  
 }
 
-@media (--lg-hidden) {
+@media (--lg-only) {
   .hidden-lg {
     display: none;  
   }  
 }
 
-@media (--xl-hidden) {
+@media (--xl-only) {
   .hidden-xl {
     display: none;  
   }  
