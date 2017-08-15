@@ -12,13 +12,21 @@
     "type": "git",
     "url": "git://github.com/evgenyrodionov/flexboxgrid2.git"
   },
-  "keywords": ["browser", "flexbox", "grid", "css"],
+  "keywords": [
+    "browser",
+    "flexbox",
+    "grid",
+    "css"
+  ],
   "author": "@evgenyrodionov",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/evgenyrodionov/flexboxgrid2/issues"
   },
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "homepage": "https://github.com/evgenyrodionov/flexboxgrid2",
   "devDependencies": {
     "grunt": "^0.4.5",
