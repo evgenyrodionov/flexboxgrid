@@ -1,33 +1,33 @@
 <!DOCTYPE HTML><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>flexboxgrid2</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css"><script>function loadCSS(href, before, media, callback) {
-  "use strict";
-  var ss = window.document.createElement("link");
-  var ref = before || window.document.getElementsByTagName("script")[0];
-  var sheets = window.document.styleSheets;
-  ss.rel = "stylesheet";
-  ss.href = href;
-  ss.media = "only x";
-  ref.parentNode.insertBefore(ss, ref);
-  ss.onloadcssdefined = function(cb) {
-    var defined;
-    for (var i = 0; i < sheets.length; i++) {
-      if (sheets[i].href && sheets[i].href.indexOf(href) > -1) {
-        defined = true;
-      }
-    }
-    if (defined) {
-      cb();
-    } else {
-      setTimeout(function() {
-        ss.onloadcssdefined(cb);
+      "use strict";
+      var ss = window.document.createElement("link");
+      var ref = before || window.document.getElementsByTagName("script")[0];
+      var sheets = window.document.styleSheets;
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      ref.parentNode.insertBefore(ss, ref);
+      ss.onloadcssdefined = function(cb) {
+        var defined;
+        for (var i = 0; i < sheets.length; i++) {
+          if (sheets[i].href && sheets[i].href.indexOf(href) > -1) {
+            defined = true;
+          }
+        }
+        if (defined) {
+          cb();
+        } else {
+          setTimeout(function() {
+            ss.onloadcssdefined(cb);
+          });
+        }
+      };
+      ss.onloadcssdefined(function() {
+        ss.media = media || "all";
       });
+      return ss;
     }
-  };
-  ss.onloadcssdefined(function() {
-    ss.media = media || "all";
-  });
-  return ss;
-}
-loadCSS("https://fonts.googleapis.com/css?family=Chivo:900");</script><noscript><link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet"></noscript></head><body class="layout"><div class="page"><header class="hero"><div class="row center-xs"><h1 class="hero-headline">flexboxgrid2</h1></div><div class="row center-xs"><p class="hero-copy">A grid system based on the <a href="http://caniuse.com/#search=flexbox"><code class="inline-anchor">flex</code></a> display property.</p></div><div class="row center-xs"><a class="button" href="https://github.com/evgenyrodionov/flexboxgrid2">Github</a></div></header><div class="container"><section class="page-section"><h2>Responsive</h2><p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md, lg &amp; xl viewport widths.</p><div class="row"><div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-xl-1"><div class="box-row"></div></div><div class="col-xs-6 col-sm-4 col-md-6 col-lg-8 col-xl-10"><div class="box-row"></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1"><div class="box-row"></div></div><div class="col-xs-12 col-sm-6 col-md-9 col-lg-10 col-xl-11"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-10 col-sm-6 col-md-8 col-lg-10 col-xl-11"><div class="box-row"></div></div><div class="col-xs-2 col-sm-6 col-md-4 col-lg-2 col-xl-1"><div class="box-row"></div></div></div><pre><code>&lt;div class="row">
+    loadCSS("https://fonts.googleapis.com/css?family=Chivo:900");</script><noscript><link href="https://fonts.googleapis.com/css?family=Chivo:900" rel="stylesheet"></noscript></head><body class="layout"><div class="page"><header class="hero"><div class="row center-xs"><h1 class="hero-headline">flexboxgrid2</h1></div><div class="row center-xs"><p class="hero-copy">A grid system based on the <a href="http://caniuse.com/#search=flexbox"><code class="inline-anchor">flex</code></a> display property.</p></div><div class="row center-xs"><a class="button" href="https://github.com/evgenyrodionov/flexboxgrid2">Github</a></div></header><div class="container"><section class="page-section"><h2>Responsive</h2><p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xs, sm, md, lg &amp; xl viewport widths.</p><div class="row"><div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-xl-1"><div class="box-row"></div></div><div class="col-xs-6 col-sm-4 col-md-6 col-lg-8 col-xl-10"><div class="box-row"></div></div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-xl-1"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 col-xl-1"><div class="box-row"></div></div><div class="col-xs-12 col-sm-6 col-md-9 col-lg-10 col-xl-11"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-10 col-sm-6 col-md-8 col-lg-10 col-xl-11"><div class="box-row"></div></div><div class="col-xs-2 col-sm-6 col-md-4 col-lg-2 col-xl-1"><div class="box-row"></div></div></div><pre><code>&lt;div class="row">
     &lt;div class="col-xs-12
                 col-sm-8
                 col-md-6
@@ -41,7 +41,7 @@ loadCSS("https://fonts.googleapis.com/css?family=Chivo:900");</script><noscript>
     &lt;div class="col-xs-12">
         &lt;div class="box">12&lt;/div>
     &lt;/div>
-&lt;/div></code></pre></section><a name="offsets"></a><section class="page-section"><h2>Offsets</h2><p>Offset a column</p><div class="row"><div class="col-xs-3"><div class="box-row"></div></div><div class="col-xs-offset-3 col-xs-6"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-offset-4 col-xs-6"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-offset-2 col-xs-4"><div class="box-row"></div></div></div><pre><code>&lt;div class="row">
+&lt;/div></code></pre></section><section class="page-section"><h2>Offsets</h2><p>Offset a column</p><div class="row"><div class="col-xs-3"><div class="box-row"></div></div><div class="col-xs-offset-3 col-xs-6"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-offset-4 col-xs-6"><div class="box-row"></div></div></div><div class="row"><div class="col-xs-offset-2 col-xs-4"><div class="box-row"></div></div></div><pre><code>&lt;div class="row">
     &lt;div class="col-xs-offset-3 col-xs-9">
         &lt;div class="box">offset&lt;/div>
     &lt;/div>
@@ -193,4 +193,30 @@ loadCSS("https://fonts.googleapis.com/css?family=Chivo:900");</script><noscript>
         &lt;/div>
     &lt;/div>
 &lt;/div>
-</code></pre></section><footer class="page-footer"><div class="row"><div class="col-xs end"><a class="link-top" href="#top">⇪ back to top</a></div></div></footer></div></div></body></html>
+</code></pre></section><section class="page-section"><h2>Hiding</h2><p>Add one or more breakpoint modifiers to hide columns based on the viewport.</p><h3><code>.hidden-</code></h3><div class="row"><div class="col-xs-12"><div class="box box-container"><div class="row"><div class="col-xs"><div class="box-nested hidden-xs">xs</div></div><div class="col-xs"><div class="box-nested hidden-sm">sm</div></div><div class="col-xs"><div class="box-nested hidden-md">md</div></div><div class="col-xs"><div class="box-nested hidden-lg">lg</div></div><div class="col-xs"><div class="box-nested hidden-xl">xl</div></div></div></div></div></div><pre><code>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs&quot;&gt;
+        &lt;div class=&quot;box hidden-xs&quot;&gt;
+            xs
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs&quot;&gt;
+        &lt;div class=&quot;box hidden-sm&quot;&gt;
+            sm
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs&quot;&gt;
+        &lt;div class=&quot;box hidden-md&quot;&gt;
+            md
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs&quot;&gt;
+        &lt;div class=&quot;box hidden-lg&quot;&gt;
+            lg
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-xs&quot;&gt;
+        &lt;div class=&quot;box hidden-xl&quot;&gt;
+            xl
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></section><footer class="page-footer"><div class="row"><div class="col-xs end"><a class="link-top" href="#top">⇪ back to top</a></div></div></footer></div></div></body></html>

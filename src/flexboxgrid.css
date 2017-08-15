@@ -4,10 +4,10 @@
   --gutter-compensation: calc((var(--gutter-width) * 0.5) * -1);
   --half-gutter-width: calc((var(--gutter-width) * 0.5));
   --xs-min: 0rem;
-  --sm-min: 36rem; /* 576 */
-  --md-min: 48rem; /* 768 */
-  --lg-min: 62rem; /* 992 */
-  --xl-min: 75rem; /* 1200 */
+  --sm-min: 576px;
+  --md-min: 768px;
+  --lg-min: 992px;
+  --xl-min: 1200px;
   --screen-xs-min: var(--xs-min);
   --screen-sm-min: var(--sm-min);
   --screen-md-min: var(--md-min);
@@ -18,10 +18,16 @@
   --container-xl: calc(var(--xl-min) - var(--gutter-width));
 }
 
-@custom-media --sm-viewport only screen and (min-width: 36rem);
-@custom-media --md-viewport only screen and (min-width: 48rem);
-@custom-media --lg-viewport only screen and (min-width: 62rem);
-@custom-media --xl-viewport only screen and (min-width: 75rem);
+@custom-media --sm-viewport only screen and (min-width: 576px);
+@custom-media --md-viewport only screen and (min-width: 768px);
+@custom-media --lg-viewport only screen and (min-width: 992px);
+@custom-media --xl-viewport only screen and (min-width: 1200px);
+
+@custom-media --xs-hidden only screen and (max-width: 575px);
+@custom-media --sm-hidden only screen and (min-width: 576px) and (max-width: 767px);
+@custom-media --md-hidden only screen and (min-width: 768px) and (max-width: 991px);
+@custom-media --lg-hidden only screen and (min-width: 992px) and (max-width: 1200px);
+@custom-media --xl-hidden only screen and (min-width: 1200px);
 
 .container {
   margin-left: auto;
@@ -1044,4 +1050,34 @@
   .last-xl {
     order: 1;
   }
+}
+
+@media (--xs-hidden) {
+  .hidden-xs {
+    display: none;  
+  }  
+}
+
+@media (--sm-hidden) {
+  .hidden-sm {
+    display: none;  
+  }  
+}
+
+@media (--md-hidden) {
+  .hidden-md {
+    display: none;  
+  }  
+}
+
+@media (--lg-hidden) {
+  .hidden-lg {
+    display: none;  
+  }  
+}
+
+@media (--xl-hidden) {
+  .hidden-xl {
+    display: none;  
+  }  
 }
