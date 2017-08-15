@@ -9,11 +9,11 @@ Grid based on the `flex` display property and rem.
 - `.col-*` padding: .5rem.
 
 ### Breakpoints
-- `xs`: 0−36rem
-- `sm`: 36−48rem
-- `md`: 48−62rem
-- `lg`: 62−75rem
-- `xl`: 75rem+
+- `xs`: 0−575px
+- `sm`: 576px-767px
+- `md`: 768px−991px
+- `lg`: 992px−1199px
+- `xl`: 1200px+
 
 # Install
 ### yarn
