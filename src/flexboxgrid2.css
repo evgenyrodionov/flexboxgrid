@@ -8,14 +8,6 @@
   --md-min: 768px;
   --lg-min: 992px;
   --xl-min: 1200px;
-  --screen-xs-min: var(--xs-min);
-  --screen-sm-min: var(--sm-min);
-  --screen-md-min: var(--md-min);
-  --screen-lg-min: var(--lg-min);
-  --container-sm: calc(var(--sm-min) - var(--gutter-width));
-  --container-md: calc(var(--md-min) - var(--gutter-width));
-  --container-lg: calc(var(--lg-min) - var(--gutter-width));
-  --container-xl: calc(var(--xl-min) - var(--gutter-width));
 }
 
 @custom-media --sm-viewport only screen and (min-width: 576px);
@@ -30,6 +22,7 @@
 @custom-media --xl-only only screen and (min-width: 1200px);
 
 .container {
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-right: .5rem;
@@ -46,7 +39,7 @@
     padding-right: .5rem;
     padding-left: .5rem;
 
-    width: var(--container-sm);
+    width: var(--sm-min);
     max-width: 100%;
   }
 }
@@ -56,7 +49,7 @@
     padding-right: .5rem;
     padding-left: .5rem;
 
-    width: var(--container-md);
+    width: var(--md-min);
     max-width: 100%;
   }
 }
@@ -66,7 +59,7 @@
     padding-right: .5rem;
     padding-left: .5rem;
 
-    width: var(--container-lg);
+    width: var(--lg-min);
     max-width: 100%;
   }
 }
@@ -76,7 +69,7 @@
     padding-right: .5rem;
     padding-left: .5rem;
 
-    width: var(--container-xl);
+    width: var(--xl-min);
     max-width: 100%;
   }
 }
