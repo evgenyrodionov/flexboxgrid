@@ -38,4 +38,4 @@ import 'flexboxgrid2/flexboxgrid2.css'
 <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@[version]/flexboxgrid2.css">
 ``` 
 
-Replace `[version]` with current version, f.e. `7.1.0`
+Replace `[version]` with current version, f.e. `7.2.1`
